@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  grid-column: full-start/full-end;
+  grid-row: 1/2;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/img/background-photo.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  // &__nav {}
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+
+    &:link,
+    &:visited {
+      background-color: $color-grey-light-1;
+      padding: 1rem 2rem;
+      border-radius: 10%;
+      transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $color-grey-light-2;
+    }
+  }
+
+  // &__hero {}
+  &__heading-1 {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    color: $color-grey-light-1;
+    margin-top: 8rem;
+  }
+}
+
+
+
+
+.logo {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+
+
+  &__input {
+    background-color: $color-grey-light-1;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 70rem;
+    height: 5rem;
+    font-size: 2rem;
+    transition: all .2s;
+
+
+    &:hover {
+      background-color: $color-grey-light-2;
+
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-grey-light-1;
+    transform: translatex(-7rem);
+    border-radius: 100px;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    transition: all .2s;
+
+
+    // height: 4rem;
+    &:hover {
+      background-color: $color-grey-light-2;
+      border: none;
+
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+
+    &:hover {
+      fill: #20df20ab;
+    }
+  }
+
+  &:hover {
+    outline: none;
+    border: none;
+  }
+
+}

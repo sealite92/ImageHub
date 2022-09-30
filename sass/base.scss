@@ -1,0 +1,37 @@
+$color-grey-light-1:#f5f0f0;
+$color-grey-light-2:#d6d0d0;
+
+$bp-largest: 75em; ///1200px
+$bp-large: 62.5em; ///1000px
+$bp-medium: 50em; ///800px
+$bp-small: 37.5em; ///600px
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(2rem, 1fr)[center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end]minmax(2rem, 1fr)[full-end];
+  grid-template-rows: 60vh 8rem repeat(7, minmax(min-content, max-content));
+  grid-row-gap: 8rem;
+
+
+}
